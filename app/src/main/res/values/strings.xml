@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">小丁PC遥控器-内测版</string>
+    <string name="title_activity_login">工程模式登录</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">电子邮箱地址</string>
+    <string name="prompt_password">内部口令（可选）</string>
+    <string name="action_sign_in">登录后台调试中心</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_email">这个电邮地址不符合国际规范</string>
+    <string name="error_invalid_password">这个口令过短或不符合安全策略</string>
+    <string name="error_incorrect_password">此口令无效</string>
+    <string name="error_field_required">拒绝请求</string>
+    <string name="permission_rationale">请联系管理员获得权限许可</string>
+</resources>

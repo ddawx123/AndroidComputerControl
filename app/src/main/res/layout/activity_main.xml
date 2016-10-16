@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dingstudio.pcontrol.MainActivity"
+    android:background="#00000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="程序版本：v0.1.alpha 小丁工作室版权所有"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textVersion" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="在这里输入远程主机的域名或IP地址！"
+        android:id="@+id/textAddress"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="建立连接"
+        android:id="@+id/btnConnect"
+        android:layout_below="@+id/textAddress"
+        android:layout_alignRight="@+id/textAddress"
+        android:layout_alignEnd="@+id/textAddress"
+        android:background="#00000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="断开连接"
+        android:id="@+id/btnDisConnect"
+        android:layout_below="@+id/btnConnect"
+        android:layout_alignRight="@+id/btnConnect"
+        android:layout_alignEnd="@+id/btnConnect"
+        android:background="#00000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程熄屏"
+        android:id="@+id/btnCloseScreen"
+        android:background="#00000000"
+        android:layout_below="@+id/btnDisConnect"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程锁屏"
+        android:id="@+id/btnLockScreen"
+        android:layout_alignTop="@+id/btnCloseScreen"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程重启"
+        android:id="@+id/btnReboot"
+        android:layout_alignTop="@+id/btnLockScreen"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#00000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音量增大"
+        android:id="@+id/btnVolUp"
+        android:background="#00000000"
+        android:layout_below="@+id/btnReboot"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音量减小"
+        android:id="@+id/btnVolDn"
+        android:layout_alignTop="@+id/btnVolUp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#00000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="静音/恢复"
+        android:id="@+id/btnSoundCtl"
+        android:layout_alignTop="@+id/btnVolUp"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextCommand"
+        android:hint="此处可输入所需发送的自定义数据包"
+        android:layout_below="@+id/btnVolUp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:id="@+id/btnSendUserMessage"
+        android:background="#00000000"
+        android:layout_alignTop="@+id/TextCommand"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/TextCommand"
+        android:layout_toRightOf="@+id/TextCommand" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:background="#00000000"
+        android:text="自定义参数：\nblockinput -锁定远端机键盘和鼠标；\nunlock则可进行反向操作。\n这些参数公开，其他高级参数请联系作者索取帮助文档！"
+        android:layout_below="@+id/TextCommand"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
